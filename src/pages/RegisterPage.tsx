@@ -1,3 +1,4 @@
+
 import { useState } from 'react';
 import { Link, useNavigate } from 'react-router-dom';
 import { Button } from '@/components/ui/button';
@@ -23,10 +24,6 @@ const RegisterPage = () => {
 
   const handleInputChange = (field: string, value: string) => {
     setFormData(prev => ({ ...prev, [field]: value }));
-  };
-
-  const handleTermsChange = (checked: boolean | "indeterminate") => {
-    setAcceptTerms(checked === true);
   };
 
   const handleSubmit = async (e: React.FormEvent) => {
@@ -125,7 +122,7 @@ const RegisterPage = () => {
                   <Checkbox 
                     id="terms" 
                     checked={acceptTerms}
-                    onCheckedChange={handleTermsChange}
+                    onCheckedChange={setAcceptTerms}
                   />
                   <Label htmlFor="terms" className="text-sm">
                     J'accepte les conditions d'utilisation et la politique de confidentialité
