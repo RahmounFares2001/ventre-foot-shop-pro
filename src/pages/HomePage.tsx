@@ -44,13 +44,13 @@ const HomePage = () => {
               </p>
               
               <div className="flex flex-col sm:flex-row gap-4">
-                <Button size="lg" className="bg-white text-green-800 hover:bg-green-50 font-bold py-4 px-8 text-lg">
+                <Button size="lg" className="bg-white text-green-800 hover:bg-green-50 font-bold py-4 px-8 text-lg" asChild>
                   <Link to="/products" className="flex items-center space-x-2">
                     <span>DÉCOUVRIR</span>
                     <span>⚡</span>
                   </Link>
                 </Button>
-                <Button size="lg" variant="outline" className="text-white border-2 border-white hover:bg-white hover:text-green-800 font-bold py-4 px-8 text-lg">
+                <Button size="lg" variant="outline" className="text-white border-2 border-white hover:bg-white hover:text-green-800 font-bold py-4 px-8 text-lg" asChild>
                   <Link to="/products/crampons" className="flex items-center space-x-2">
                     <span>CRAMPONS</span>
                     <span>👟</span>
@@ -192,7 +192,7 @@ const HomePage = () => {
           
           <div className="text-center mt-12">
             <Button size="lg" className="bg-green-600 hover:bg-green-700 text-white px-8 py-4 text-lg font-semibold" asChild>
-              <Link to="/products">Voir Toute la Collection →</Link>
+              <Link to="/products">Voir Toute la Collection</Link>
             </Button>
           </div>
         </div>
